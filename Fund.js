@@ -114,7 +114,7 @@ function render(data, loading) {
                         let text = $clipboard.text;
                         if (text.length > 0) {
                             // console.log(text)
-                            addCode = text.match(new RegExp('\\d{6,7}(?!//d)', 'g'));
+                            addCode = text.match(new RegExp('\\d{6,7}(?!\\d)', 'g'));
                             // console.log(addCode)
                             if (addCode) {
                                 request()
